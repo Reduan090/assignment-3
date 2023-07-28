@@ -48,8 +48,12 @@
     .modal-box{
       --tw-scale-x:0;
       --tw-scale-y:0;
-      width: 70%;
+      width: 60%;
       max-height: calc(100vh);
+      margin-right: 200px;
+    }
+    .mx-auto{
+  
     }
     .flex{
       display: flex;
@@ -57,6 +61,13 @@
     .w-\[464px\] {
       width: 0;
     }
+    .flex{
+      display: none;
+    }
+    *{
+      outline: 1px solid red !important;
+    }
+ 
   </style>
 
   <!--________________Style Vanilla CSS________________-->
@@ -68,14 +79,14 @@
   <header class="container mx-auto">
     <!--________________Navbar_______________-->
           
-    <div class="large-device">
+    <div class="large-device lg:visible md:visible">
     
-        <div class="navbar mb-[50px] bg-[#F85559] flex justify-around items-center h-[120px] rounded-full">
+        <div class="navbar mb-[50px] bg-[#F85559] flex justify-around items-center h-[120px] rounded-full lg:w-auto md:w-auto">
           <ul class="flex gap-5">
-            <li><a class="text-white text-[18px]" href="#">Home</a></li>
-            <li><a class="text-white text-[18px]" href="#">About Us</a></li>
-            <li><a class="text-white text-[18px]" href="#">Shop</a></li>
-            <li><a class="text-white text-[18px]" href="#">All Fruits</a></li>
+            <li><a class="text-white lg:text-[18px] lg:visible" href="#">Home</a></li>
+            <li><a class="text-white lg:text-[18px] lg:visible" href="#">About Us</a></li>
+            <li><a class="text-white lg:text-[18px] lg:visible" href="#">Shop</a></li>
+            <li><a class="text-white lg:text-[18px] lg:visible" href="#">All Fruits</a></li>
           </ul>
     
           <div class="flex lg:invisible">
@@ -84,12 +95,12 @@
             </button>
           </div>
     
-          <div class="flex gap-[16px]">
+          <div class="lg:flex lg:gap-[16px] flex-row">
             <img src="images/logo.png" alt="">
             <p class="pr-[220px] font-bold text-5xl text-white ">Fruit Burst</p>
           </div>
-          <div class="form-control">
-          <input class="rounded-full w-[270px] h-[50px]" type="text" placeholder="Search here" class="input  w-24 md:w-auto"/>
+          <div class="form-control lg:visible md:invisible">
+          <input class="rounded-full w-[270px] h-[50px] lg:visible md:invisible" type="text" placeholder="Search here" class="input  w-24 md:w-auto"/>
          </div>
           </div>
 
@@ -97,13 +108,13 @@
 
     <div class="small-device">
       <!--<section class="lg:invisible sm:visible relative -mt-[140px] mb-[50px]">-->
-        <div class="navbar bg-base-100 flex justify-around">
+        <div class="navbar bg-base-100 flex justify-around lg:invisible">
           <div class="navbar-start">
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost btn-circle">
+              <label tabindex="0" class="btn btn-ghost btn-circle lg:invisible md:invisible">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
@@ -214,12 +225,12 @@
       </div>
     </section>
 
-    <section id="hidden" class="container relative -my-28 lg:w-[1440px] md:w-[800px] pl-[85px]">
+    <section class="container relative -my-28 lg:w-[1440px] md:w-[700px] lg:pl-[85px]">
 
-      <div class="flex justify-center items-center bg-white rounded-2xl "
+      <div class="flex justify-center items-center bg-white rounded-2xl lg:visible md:invisible invisible lg:gap-4"
         style="box-shadow:0px 8px 60px 0px rgba(0, 0, 0, 0.05)  ;">
 
-        <div class="card">
+        <div class="card lg:w-auto md:w-14">
           <figure class="px-10 pt-10">
             <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -228,7 +239,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card  lg:w-auto md:w-14">
           <figure class="px-10 pt-10">
             <img src="images/fruit2.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -237,7 +248,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card  lg:w-auto md:w-14">
           <figure class="px-10 pt-10">
             <img src="images/fruit3.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -245,7 +256,7 @@
             <h2 class="card-title">Strawberry</h2>
           </div>
         </div>
-        <div class="card">
+        <div class="card  lg:w-auto md:w-14">
 
           <figure class="px-10 pt-10">
             <img src="images/fruit4.png" alt="Shoes" class="rounded-xl" />
@@ -255,7 +266,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card  lg:w-auto md:w-14">
           <figure class="px-10 pt-10">
             <img src="images/fruit5.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -309,9 +320,9 @@
       </div>
     </section>
     <!--_________Cards_________-->
-    <section class="container mx-auto lg:mx-auto lg:mt-[60px] ml-8" >
+    <section class="container mx-auto lg:mx-auto lg:mt-[60px] " >
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:ml-auto lg:mr-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:ml-auto lg:mr-auto lg:mt-auto md:mt-12">
 
         <div class="card w-[342px] h-[470px] bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
@@ -521,7 +532,7 @@
               <!-- Open the modal using ID.showModal() method -->
               <button class="btn border-none bg-white " onclick="my_modal_4.showModal()">Details</button>
               <dialog id="my_modal_4" class="modal">
-                <form method="dialog" class="modal-box mx-auto">
+                <form method="dialog" class="modal-box ">
                 <!--_____________-->
                 <div class="">
                   <div class="card items-center">
@@ -655,7 +666,7 @@
       </div>
 
     <div class="lg:flex lg:justify-between lg:items-center lg:mt-[50px] grid grid-cols-1">
-      <div class="mt-5 items-center lg:pl-0 pl-[22px]">
+      <div class="mt-5 items-center lg:pl-0 md:pl-52 pl-[22px]">
         <div class="flex gap-[24px]">
           
           <img src="images/group 1.svg" alt="#">
@@ -690,11 +701,11 @@
       </div>
       </div>
       
-        <div class="lg:w-[464px] lg:h-[414px] w-[350px] lg:pl-0 pl-[50px] lg:mt-0 mt-7">
+        <div class="lg:w-[464px] lg:h-[414px] md:w-auto md:pl-40 w-[350px] lg:pl-0 pl-[50px] lg:mt-0 mt-7">
           <img src="images/whychoose1.png" alt="#">
         </div>
       
-        <div class="mt-5 items-center lg:pl-0 pl-[15px]">
+        <div class="mt-5 items-center lg:pl-0 md:pl-52 pl-[15px]">
           <div class="flex gap-[24px]">
           
           <div class="text-right">
@@ -734,12 +745,12 @@
   <footer class="">
 
     <section class="mt-[140px] lg:h-[500px] footer footer-center lg:p-10 bg-stone-800 text-base-content rounded w[376px]">
-      <div class="flex justify-center mt-[40px]">
+      <div class="flex justify-center lg:mt-[40px] mt-2">
         <img src="images/logo.png" alt="">
         <h1 class=" lg:text-5xl text-white ">Fruit Burst</a>
       </div>
 
-      <div class="flex gap-12 text-white -mt-[65px]">
+      <div class="lg:flex lg:gap-12 text-white grid grid-cols-3   lg:mb-0 mb-4 lg:mt-0 mt-1">
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About Us</a>
         <a class="link link-hover">Shop</a>
@@ -767,7 +778,7 @@
         </div>
       </div>
       <div class="text-white -mt-[65px]">
-        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        <p class="lg:text-[16px] text-xs">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
       </div>
     </section>
   </footer>
