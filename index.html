@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
   <!--______________DaisyUI_________________________-->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -52,9 +55,7 @@
       max-height: calc(100vh);
       margin-right: 200px;
     }
-    .mx-auto{
   
-    }
     .flex{
       display: flex;
     }
@@ -64,14 +65,11 @@
     .flex{
       display: none;
     }
-    *{
-      outline: 1px solid red !important;
-    }
  
   </style>
 
   <!--________________Style Vanilla CSS________________-->
-  <title>Document</title>
+  <title>Fruit Burst</title>
 </head>
 
 <body>
@@ -81,8 +79,8 @@
           
     <div class="large-device lg:visible md:visible">
     
-        <div class="navbar mb-[50px] bg-[#F85559] flex justify-around items-center h-[120px] rounded-full lg:w-auto md:w-auto">
-          <ul class="flex gap-5">
+        <div class="navbar mb-[50px] bg-[#F85559] flex justify-around items-center lg:h-[120px] md:h-[100px] lg:pl-0 md:pl-[200px] rounded-full lg:w-auto md:w-auto lg:gap-0 md:gap-12">
+          <ul class="lg:flex gap-5 md:flex-none">
             <li><a class="text-white lg:text-[18px] lg:visible" href="#">Home</a></li>
             <li><a class="text-white lg:text-[18px] lg:visible" href="#">About Us</a></li>
             <li><a class="text-white lg:text-[18px] lg:visible" href="#">Shop</a></li>
@@ -90,14 +88,14 @@
           </ul>
     
           <div class="flex lg:invisible">
-            <button class="btn btn-square btn-ghost">
+            <button class="btn btn-square btn-ghost lg:invisible md:invisible">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
           </div>
     
           <div class="lg:flex lg:gap-[16px] flex-row">
             <img src="images/logo.png" alt="">
-            <p class="pr-[220px] font-bold text-5xl text-white ">Fruit Burst</p>
+            <p class="lg:pr-[220px]  font-bold lg:text-5xl md:text-3xl text-white ">Fruit Burst</p>
           </div>
           <div class="form-control lg:visible md:invisible">
           <input class="rounded-full w-[270px] h-[50px] lg:visible md:invisible" type="text" placeholder="Search here" class="input  w-24 md:w-auto"/>
@@ -124,7 +122,7 @@
           </div>
           <div class="navbar-center">
             <img src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-5xl">daisyUI</a>
+            <a class="btn btn-ghost normal-case text-5xl">Fruit Burst</a>
           </div>
         </div>
        </section>
@@ -235,7 +233,7 @@
             <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Strawberry</h2>
+            <h2 class="card-title">Graps</h2>
           </div>
         </div>
 
@@ -244,7 +242,7 @@
             <img src="images/fruit2.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Strawberry</h2>
+            <h2 class="card-title">Orange</h2>
           </div>
         </div>
 
@@ -253,7 +251,7 @@
             <img src="images/fruit3.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Strawberry</h2>
+            <h2 class="card-title">Mango</h2>
           </div>
         </div>
         <div class="card  lg:w-auto md:w-14">
@@ -271,13 +269,14 @@
             <img src="images/fruit5.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Strawberry</h2>
+            <h2 class="card-title">Pomegranate</h2>
           </div>
         </div>
 
       </div>
     </section>
     <!--________________Slider End______________-->
+
   </header>
 
   <main>
@@ -419,8 +418,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-extrabold text-4xl ">Orange</h2>
-                      <p class="text-xl mt-[24px]">we have got fresh apples for you,order now and enjoy 
-                      amazing and fresh Apples also Rate us</p>
+                      <p class="text-xl mt-[24px]">we have got fresh oranges for you,it provides vitamin-c and more.</p>
 
                         <div class="rating mt-[32px]">
                           <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
@@ -577,6 +575,11 @@
     <!--______________Deal of the day section End_____________-->
 
 
+    <!--________Shop All Button________-->
+    <div class="container mx-auto lg:text-center lg:mt-14 md:text-center text-center md:mt-9 mt-3">
+      <button class="btn btn-outline btn-success">Shop All</button>
+    </div>
+
     <!--___________Meet the Section Team___________-->
     <section class="container lg:mx-auto sm:mx-auto lg:h-[700px] my-[120px] mt-[200px]">
 
@@ -585,9 +588,8 @@
         <div class="hero-content text-center text-neutral-content">
           <div class="">
             <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
-            <p class="mb-5 font-semibold text-white">Contrary to popular belief, is not simply random text. It has roots in a piece
-            of classical <br>
-            Latin literature from 45 BC, making it over 2000 years old.</p>
+            <p class="mb-5 font-semibold text-white">Contrary to popular belief, it is not a simple team. All experts are here for your guid line. <br>
+            visit their profile and talk to them.Keep healthy.</p>
             <!-------flex justify-center gap-[100px]------->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[50px]">
 
@@ -661,8 +663,7 @@
     <section class="container mx-auto">
       <div class="text-center">
         <h2 class="font-extrabold lg:text-5xl text-3xl">Why Choose Us</h2>
-        <p class="lg:font-medium lg:text-[16px] mt-[24px] text-[14px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
-        Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p class="lg:font-medium lg:text-[16px] mt-[24px] text-[14px]">Why Choose us! obviously have the best reason. year you are the right place.We have dedicated team,we provide <br> fresh fruits and so on.keep your eye bellow for more, Thank you.</p>
       </div>
 
     <div class="lg:flex lg:justify-between lg:items-center lg:mt-[50px] grid grid-cols-1">
@@ -684,8 +685,7 @@
       
       <div>
         <h2 class="font-extrabold text-2xl">Fresh is Best</h2>
-        <p>Professional employees are there for you to pick <br>
-         the most amazing and fresh fruits.</p>
+        <p>Fresh fruits are good for our sound body and mind <br>So fresh is always best. </p>
       </div>
       </div>
       
@@ -695,13 +695,12 @@
       
       <div>
       <h2 class="font-extrabold text-2xl">Gift Certificates</h2>
-      <p>Professional employees are there for you to pick <br>
-       the most amazing and fresh fruits.</p>
+      <p>We have gift corner to. We have got gift certificates <br> for you. Be the lucky winner.</p>
       </div>
       </div>
       </div>
       
-        <div class="lg:w-[464px] lg:h-[414px] md:w-auto md:pl-40 w-[350px] lg:pl-0 pl-[50px] lg:mt-0 mt-7">
+        <div class="lg:w-[464px] lg:h-[414px] md:w-auto md:pl-20 w-[350px] lg:pl-0 pl-[50px] lg:mt-0 mt-7">
           <img src="images/whychoose1.png" alt="#">
         </div>
       
@@ -729,8 +728,7 @@
     
       <div  class="text-right">
         <h2 class="font-extrabold text-2xl">The Benefits Only</h2>
-        <p>Professional employees are there for you to pick <br>
-         the most amazing and fresh fruits.</p>
+        <p>fruits are always benificial for us. thats why we are <br>here for you, keep with us.</p>
       </div>
       <img src="images/like 1.svg" alt="#">
       </div>
@@ -778,7 +776,7 @@
         </div>
       </div>
       <div class="text-white -mt-[65px]">
-        <p class="lg:text-[16px] text-xs">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        <p class="lg:text-[16px] text-xs">Copyright © 2023 - All right reserved by fruit burst</p>
       </div>
     </section>
   </footer>
